@@ -414,7 +414,7 @@ public:
         QCommandLineParser parser;
         parser.addHelpOption();
         parser.setSingleDashWordOptionMode(QCommandLineParser::ParseAsLongOptions);
-        parser.setApplicationDescription(QObject::tr("O3DE Editor"));
+        parser.setApplicationDescription(QObject::tr("Henu Engine Editor"));
         // nsDocumentRevisionDebugMode is an argument that the macOS system passed into an App bundle that is being debugged.
         // Need to include it here so that Qt argument parser does not error out.
         bool nsDocumentRevisionsDebugMode = false;
@@ -900,7 +900,7 @@ bool CCryEditApp::CheckIfAlreadyRunning()
             // NOTE:  If you choose to do this, be sure to export *different* levels, since nothing prevents multiple runs
             // from trying to write to the same level at the same time.
             // If we're running interactively, let's ask and make sure the user actually intended to do this.
-            if (QMessageBox::question(AzToolsFramework::GetActiveWindow(), QObject::tr("Too many apps"), QObject::tr("There is already an Open 3D Engine application running\nDo you want to start another one?")) != QMessageBox::Yes)
+            if (QMessageBox::question(AzToolsFramework::GetActiveWindow(), QObject::tr("Too many apps"), QObject::tr("There is already a Henu Engine application running\nDo you want to start another one?")) != QMessageBox::Yes)
             {
                 return false;
             }
@@ -2403,7 +2403,7 @@ void CCryEditApp::OpenProjectManager(const AZStd::string& screen)
     bool launchSuccess = AzFramework::ProjectManager::LaunchProjectManager(commandLineOptions);
     if (!launchSuccess)
     {
-        QMessageBox::critical(AzToolsFramework::GetActiveWindow(), QObject::tr("Failed to launch O3DE Project Manager"), QObject::tr("Failed to find or start the O3dE Project Manager"));
+        QMessageBox::critical(AzToolsFramework::GetActiveWindow(), QObject::tr("Failed to launch Henu Engine Project Manager"), QObject::tr("Failed to find or start the Henu Engine Project Manager"));
     }
 }
 
@@ -3106,7 +3106,7 @@ void CCryEditApp::SetEditorWindowTitle(QString sTitleStr, QString sPreTitleStr, 
     {
         if (sTitleStr.isEmpty())
         {
-            sTitleStr = QObject::tr("O3DE Editor [%1]").arg(FormatVersion(m_pEditor->GetFileVersion()));
+            sTitleStr = QObject::tr("Henu Engine Editor [%1]").arg(FormatVersion(m_pEditor->GetFileVersion()));
         }
 
         if (!sPreTitleStr.isEmpty())
@@ -3543,7 +3543,7 @@ extern "C" int AZ_DLL_EXPORT CryEditMain(int argc, char* argv[])
         int exitCode = 0;
 
         bool didCryEditStart = CCryEditApp::instance()->InitInstance();
-        AZ_Error("Editor", didCryEditStart, "O3DE Editor did not initialize correctly, and will close."
+        AZ_Error("Editor", didCryEditStart, "Henu Engine Editor did not initialize correctly, and will close."
             "\nThis could be because of incorrectly configured components, or missing required gems."
             "\nSee other errors for more details.");
 

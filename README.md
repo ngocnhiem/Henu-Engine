@@ -1,6 +1,6 @@
-# Henu Engine 
+# Henu Engine
 
-Henu Engine is an open-source, real-time, multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, Henu Engine is based on [O3DE (Open 3D Engine)](https://github.com/o3de/o3de/)
+Henu Engine is an open-source, real-time, multi-platform 3D engine for building games and interactive 3D worlds. It is based on [Open 3D Engine (O3DE)](https://github.com/o3de/o3de/); O3DE remains the upstream source for the engine framework and tooling.
 
 ## Roadmap
 Progress against the roadmap is tracked [Roadmap and process](https://github.com/users/ngocnhiem/projects/3).
@@ -67,7 +67,7 @@ To set up a project-centric source engine, complete the following steps. For oth
     
     Example:
     ```
-    cmake -B C:\henu\build\windows -S C:\o3de -G "Visual Studio 1" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B C:\henu\build\windows -S C:\henu -G "Visual Studio 17" -DLY_3RDPARTY_PATH=C:\henu-packages
     ```
     
     > Note:  Do not use trailing slashes for the <3rdParty package path>.
@@ -96,9 +96,9 @@ For more details on the steps above, refer to [Setting up O3DE from GitHub](http
 
 ### Setting up new projects and building the engine
 
-1. From the henu repo folder, set up a new project using the `Henu create-project` command.
+1. From the Henu Engine repo folder, set up a new project using the O3DE project creation command-line tool shipped with the engine.
     ```
-    scripts\Henu.bat create-project --project-path <your new project path>
+    scripts\o3de.bat create-project --project-path <your new project path>
     ```
 
 1. Configure a solution for your project.

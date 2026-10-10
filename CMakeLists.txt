@@ -31,7 +31,7 @@ endif()
 
 if(NOT PROJECT_NAME)
     include(cmake/CompilerSettings.cmake)
-    project(O3DE
+    project(HenuEngine
         LANGUAGES C CXX
         VERSION ${O3DE_INSTALL_VERSION_STRING}
     )

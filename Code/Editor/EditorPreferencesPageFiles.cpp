@@ -33,8 +33,8 @@ namespace EditorPreferencesFilesStrings
 
     static const char* ExternalEditorsClassName = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "External Editors");
     static const char* ScriptsEditorName = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Scripts Editor");
-    static const char* ScriptsEditorDesc = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Scripts Text Editor (Default to O3DE internal tool when empty)");
-    static const char* ScriptsEditorPlaceholder = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Default to O3DE internal tool when empty");
+    static const char* ScriptsEditorDesc = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Scripts Text Editor (Default to Henu Engine internal tool when empty)");
+    static const char* ScriptsEditorPlaceholder = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Default to Henu Engine internal tool when empty");
     static const char* ShadersEditorName = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Shaders Editor");
     static const char* ShadersEditorDesc = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "Shaders Text Editor");
     static const char* BSpaceEditorName = QT_TRANSLATE_NOOP("EditorPreferencesPageFiles", "BSpace Editor");

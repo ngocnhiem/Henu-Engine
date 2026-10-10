@@ -33,13 +33,13 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "Open 3D Foundation"
-            VALUE "FileDescription", "O3DE Editor"
+            VALUE "CompanyName", "Henu Engine"
+            VALUE "FileDescription", "Henu Engine Editor"
             VALUE "FileVersion", "0.1.0.1"
             VALUE "InternalName", "Editor"
             VALUE "LegalCopyright", "Copyright (c) Contributors to the Open 3D Engine Project."
             VALUE "OriginalFilename", "Editor.exe"
-            VALUE "ProductName", "O3DE Editor"
+            VALUE "ProductName", "Henu Engine Editor"
             VALUE "ProductVersion", "0.1.0.1"
         END
     END

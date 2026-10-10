@@ -46,7 +46,7 @@ CStartupLogoDialog::CStartupLogoDialog(
     case Loading:
         setWindowFlags(Qt::Dialog | Qt::FramelessWindowHint | Qt::NoDropShadowWindowHint);
         m_ui->m_pages->setCurrentIndex(0);
-        setWindowTitle(tr("Starting Open 3D Engine Editor"));
+        setWindowTitle(tr("Starting Henu Engine Editor"));
         m_ui->m_TransparentConfidential->setObjectName("copyrightNotice");
         m_ui->m_TransparentConfidential->setTextFormat(Qt::RichText);
         m_ui->m_TransparentConfidential->setText(richTextCopyrightNotice);

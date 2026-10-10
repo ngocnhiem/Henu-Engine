@@ -190,7 +190,7 @@ void EditorActionsHandler::OnActionContextRegistrationHook()
     // Main Window
     {
         AzToolsFramework::ActionContextProperties contextProperties;
-        contextProperties.m_name = "O3DE Editor";
+        contextProperties.m_name = "Henu Engine Editor";
 
         m_actionManagerInterface->RegisterActionContext(
             EditorIdentifiers::MainWindowActionContextIdentifier, contextProperties);
@@ -201,7 +201,7 @@ void EditorActionsHandler::OnActionContextRegistrationHook()
     // Editor Asset Browser
     {
         AzToolsFramework::ActionContextProperties contextProperties;
-        contextProperties.m_name = "O3DE Editor - Asset Browser";
+        contextProperties.m_name = "Henu Engine Editor - Asset Browser";
 
         m_actionManagerInterface->RegisterActionContext(
             EditorIdentifiers::EditorAssetBrowserActionContextIdentifier, contextProperties);
@@ -210,7 +210,7 @@ void EditorActionsHandler::OnActionContextRegistrationHook()
     // Editor Console
     {
         AzToolsFramework::ActionContextProperties contextProperties;
-        contextProperties.m_name = "O3DE Editor - Console";
+        contextProperties.m_name = "Henu Engine Editor - Console";
 
         m_actionManagerInterface->RegisterActionContext(
             EditorIdentifiers::EditorConsoleActionContextIdentifier, contextProperties);
@@ -219,7 +219,7 @@ void EditorActionsHandler::OnActionContextRegistrationHook()
     // Editor Entity Property Editor (Entity Inspector)
     {
         AzToolsFramework::ActionContextProperties contextProperties;
-        contextProperties.m_name = "O3DE Editor - Entity Inspector";
+        contextProperties.m_name = "Henu Engine Editor - Entity Inspector";
 
         m_actionManagerInterface->RegisterActionContext(
             EditorIdentifiers::EditorEntityPropertyEditorActionContextIdentifier, contextProperties);
@@ -1608,10 +1608,10 @@ void EditorActionsHandler::OnActionRegistrationHook()
         );
     }
 
-    // Open 3D Engine Documentation
+    // Henu Engine documentation (upstream O3DE documentation until Henu docs are available)
     {
         AzToolsFramework::ActionProperties actionProperties;
-        actionProperties.m_name = "Open 3D Engine Documentation";
+        actionProperties.m_name = "Henu Engine Documentation";
         actionProperties.m_category = "Help";
 
         m_actionManagerInterface->RegisterAction(
@@ -1668,10 +1668,10 @@ void EditorActionsHandler::OnActionRegistrationHook()
         );
     }
 
-    // About O3DE
+    // About Henu Engine
     {
         AzToolsFramework::ActionProperties actionProperties;
-        actionProperties.m_name = "&About O3DE";
+        actionProperties.m_name = "&About Henu Engine";
         actionProperties.m_category = "Help";
 
         m_actionManagerInterface->RegisterAction(

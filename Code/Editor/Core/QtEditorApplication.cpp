@@ -239,7 +239,7 @@ namespace Editor
         setWindowIcon(QIcon(":/Application/res/o3de_editor.ico"));
 
         // set the default key store for our preferences:
-        setApplicationName("O3DE Editor");
+        setApplicationName("Henu Engine Editor");
 
         installEventFilter(this);
 
