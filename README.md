@@ -1,12 +1,9 @@
-# O3DE (Open 3D Engine)
+# Henu Engine 
 
-O3DE (Open 3D Engine) is an open-source, real-time, multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, and high-fidelity simulations without any fees or commercial obligations.
-
-## Contribute
-For information about contributing to Open 3D Engine, visit [https://o3de.org/docs/contributing/](https://o3de.org/docs/contributing/).
+Henu Engine is an open-source, real-time, multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, Henu Engine is based on [O3DE (Open 3D Engine)](https://github.com/o3de/o3de/)
 
 ## Roadmap
-For information about upcoming work and features, please visit [https://o3de.org/roadmap](https://o3de.org/roadmap). Progress against the roadmap is tracked [here](https://github.com/orgs/o3de/projects/56/views/2).
+Progress against the roadmap is tracked [Roadmap and process](https://github.com/users/ngocnhiem/projects/3).
 
 ## Download and Install
 
@@ -24,20 +21,26 @@ If Git LFS is not installed, download and run the installer from: [https://git-l
 git lfs install
 ```
 
-
-### Clone the repository 
-
-```shell
-git clone https://github.com/o3de/o3de.git
-```
-
 ## Building the Engine
 
 ### Build requirements and redistributables
 
-For the latest details and system requirements, refer to [System Requirements](https://o3de.org/docs/welcome-guide/requirements/) in the documentation.
+For the latest details and system requirements.
 
-#### Windows
+#### Minimum
+*   OS: Windows or Linux.
+*   Chip:Intel Core i3 or Amd Ryzen 3.
+*   Ram: 8 GB (best 16 GB).
+*   Storage: 90 GB.
+*   Graphic Card: Nvidia GTX 1050 and Amd RX 560 or Arc A310
+
+#### Maximum
+*   Chip: Intel Core Ultra 9 or AMD Ryzen 9
+*   Ram: 32 GB (best 64GB)
+*   Storage: 200GB 
+*   Graphic Card: Nvidia RTX 5090 and Amd RX 7900 XTX (RX 9060 XTX) or Arc B580
+
+#### Windows 
 
 *   Visual Studio 2019 16.9.2 minimum (All editions supported, including Community): [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
     *   Check [System Requirements](https://o3de.org/docs/welcome-guide/requirements/) for other supported versions.
@@ -46,11 +49,6 @@ For the latest details and system requirements, refer to [System Requirements](h
         *   MSVC v142 - VS 2019 C++ x64/x86
         *   C++ 2019 redistributable update
 *   CMake 3.25.0 minimum: [https://cmake.org/download/#latest](https://cmake.org/download/#latest) (Release Candidate versions are not supported)
-
-#### Optional
-
-*   Wwise audio SDK
-    *   For the latest version requirements and setup instructions, refer to the [Wwise Audio Engine Gem](https://o3de.org/docs/user-guide/gems/reference/audio/wwise/audio-engine-wwise/) reference in the documentation.
 
 ### Quick start engine setup
 
@@ -64,12 +62,12 @@ To set up a project-centric source engine, complete the following steps. For oth
 
 1.  Configure the engine source into a solution using this command line, replacing `<your build path>`, `<your source path>`, and `<3rdParty package path>` with the paths you've created:
     ```
-    cmake -B <your build path> -S <your source path> -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<3rdParty package path>
+    cmake -B <your build path> -S <your source path> -G "Visual Studio 17" -DLY_3RDPARTY_PATH=<3rdParty package path>
     ```
     
     Example:
     ```
-    cmake -B C:\o3de\build\windows -S C:\o3de -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B C:\henu\build\windows -S C:\o3de -G "Visual Studio 1" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
     
     > Note:  Do not use trailing slashes for the <3rdParty package path>.
@@ -98,19 +96,19 @@ For more details on the steps above, refer to [Setting up O3DE from GitHub](http
 
 ### Setting up new projects and building the engine
 
-1. From the O3DE repo folder, set up a new project using the `o3de create-project` command.
+1. From the henu repo folder, set up a new project using the `Henu create-project` command.
     ```
-    scripts\o3de.bat create-project --project-path <your new project path>
+    scripts\Henu.bat create-project --project-path <your new project path>
     ```
 
 1. Configure a solution for your project.
     ```
-    cmake -B <your project build path> -S <your new project source path> -G "Visual Studio 16"
+    cmake -B <your project build path> -S <your new project source path> -G "Visual Studio 17"
     ```
 
     Example:
     ```
-    cmake -B C:\my-project\build\windows -S C:\my-project -G "Visual Studio 16"
+    cmake -B C:\my-project\build\windows -S C:\my-project -G "Visual Studio 17"
     ```
     
     > Note:  Do not use trailing slashes for the <3rdParty cache path>.
@@ -123,15 +121,3 @@ For more details on the steps above, refer to [Setting up O3DE from GitHub](http
     > Note: Your project name used in the build target is the same as the directory name of your project.
 
 This will compile after some time and binaries will be available in the project build path you've specified, under `bin/profile`.
-
-For a complete tutorial on project configuration, see [Creating Projects Using the Command Line Interface](https://o3de.org/docs/welcome-guide/create/creating-projects-using-cli/) in the documentation.
-
-## Code Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-
-<a href="https://github.com/o3de/o3de/graphs/contributors"><img src="https://contrib.rocks/image?repo=o3de/o3de&max=200&columns=24" width=850px /></a>
-
-## License
-
-For terms please see the LICENSE*.TXT files at the root of this distribution.
