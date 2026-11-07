@@ -2,6 +2,8 @@
 
 Henu Engine is an open-source, real-time, multi-platform 3D engine for building games and interactive 3D worlds. It is based on [Open 3D Engine (O3DE)](https://github.com/o3de/o3de/); O3DE remains the upstream source for the engine framework and tooling.
 
+![Screenshot of a 3D scene in the Henu Engine editor](media/125106229-07cc7e80-e0a5-11eb-9bb3-2325fad3bcd5.png)
+
 ## Roadmap
 Progress against the roadmap is tracked [Roadmap and process](https://github.com/users/ngocnhiem/projects/3).
 
